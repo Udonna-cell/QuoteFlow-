@@ -1,8 +1,8 @@
-#QuoteFlow - Random Quotes API
+# QuoteFlow - Random Quotes API
 
 QuoteFlow is a simple RESTful API that provides random quotes, allows users to search quotes by author or category, and lets admins manage the quote collection.
 
-##Features
+## Features
 
 ✅ Get a random quote
 ✅ Fetch quotes by category or author
@@ -11,16 +11,16 @@ QuoteFlow is a simple RESTful API that provides random quotes, allows users to s
 ✅ Like a quote
 ✅ Get most liked quotes
 
-##Installation
+## Installation
 
-###Requirements:
+### Requirements:
 
 - Node.js (>=14)
 
 - MongoDB (or another database if preferred)
 
 
-###Setup:
+### Setup:
 
 1. Clone the repository:
 ```sh
@@ -52,7 +52,7 @@ The API will be available at http://localhost:5000.
 
 ---
 
-##API Endpoints
+## API Endpoints
 
 1. Get a Random Quote
 
@@ -204,10 +204,10 @@ Description: Returns the most liked quotes.
 
 ---
 
-##Contributing
+## Contributing
 
 Feel free to contribute by submitting a pull request.
 
-##License
+## License
 
 This project is licensed under the MIT License.
