@@ -5,6 +5,7 @@ QuoteFlow is a simple RESTful API that provides random quotes, allows users to s
 ## Features
 
 ✅ Get a random quote
+
 ✅ Fetch quotes by category or author
 ✅ Add new quotes (Admin only)
 ✅ Update or delete quotes (Admin only)
