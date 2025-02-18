@@ -18,7 +18,7 @@ QuoteFlow is a simple RESTful API that provides random quotes, allows users to s
 
 ### Setup  
 1. Clone the repository:  
-   ```sh
+```sh
    git clone https://github.com/your-username/QuoteFlow.git
    cd QuoteFlow
 ```
