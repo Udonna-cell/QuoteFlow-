@@ -12,10 +12,10 @@ function getQuoteByID(id) {
   }))
 }
 function getQuoteByCategory(category) {
-  return ((quote()).filter(q => q.category == category));
+  return ((quote()).filter(q => q.category.toLowerCase() == category.toLowerCase()));
 }
 function getQuoteByAuthor(author) {
-  return ((quote()).filter(q => q.author == author));
+  return ((quote()).filter(q => q.author.toLowerCase() == author.toLowerCase()));
 }
 
 module.exports = {
