@@ -1,7 +1,7 @@
 const express = require('express');
 const randomQuote = require("./route/random");
 const qouteCategory = require("./route/category");
-const { getQuoteByCategory } = require('./utility/getQuote');
+const authorQuote = require('./route/author');
 
 const app = express();
 const port = 3000;
@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.use("/quotes/random", randomQuote);
 app.use("/quotes/category", qouteCategory);
-// app.use("/quotes/author", authorQuote);
+app.use("/quotes/author", authorQuote);
 
 // Start the server
 app.listen(port, () => {
