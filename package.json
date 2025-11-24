@@ -1,0 +1,30 @@
+{
+  "name": "quoteflow-",
+  "version": "1.0.0",
+  "description": "This project generate a random quote on every request",
+  "keywords": [
+    "quote",
+    "random",
+    "API"
+  ],
+  "homepage": "https://github.com/Udonna-cell/QuoteFlow-#readme",
+  "bugs": {
+    "url": "https://github.com/Udonna-cell/QuoteFlow-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Udonna-cell/QuoteFlow-.git"
+  },
+  "license": "ISC",
+  "author": "udonna-cell",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  }
+}
