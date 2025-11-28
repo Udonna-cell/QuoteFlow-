@@ -18,7 +18,11 @@ function getQuoteByAuthor(author) {
   return ((quote()).filter(q => q.author.toLowerCase() == author.toLowerCase()));
 }
 function paginated(start, limit) {
-  return (quote().slice(start, start + limit))
+  let pages = (quote());
+  start = Number(start);
+  limit = Number(limit);
+  pages = (pages.slice(start, start + limit))
+  return pages;
 }
 function topQuote() {
   if (!(quote()).length) return null; // return null if array is empty
