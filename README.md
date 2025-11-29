@@ -1,9 +1,3 @@
-Here is the final polished README.md file, ready to copy and paste directly into your project.
-It is clean, professional, and properly formatted for GitHub.
-
-
----
-
 # QuoteFlow — Random Quotes API
 
 QuoteFlow is a lightweight RESTful API for retrieving random quotes, searching quotes by category or author, and managing quotes through secure admin endpoints. It provides fast access to motivational, inspirational, and life-related quotes.
@@ -32,30 +26,29 @@ QuoteFlow is a lightweight RESTful API for retrieving random quotes, searching q
 ```sh
 git clone https://github.com/your-username/QuoteFlow.git
 cd QuoteFlow
+```
 
 2. Install dependencies
 
-
-
+```sh
 npm install
+```
 
 3. Configure environment variables
-
-
-
 Create a .env file:
-
+```evn
 PORT=3000
 ADMIN_TOKEN=your_admin_token_here
+```
 
 4. Start the server
 
 
-
+```sh
 npm start
 
 > The API will run at: http://localhost:3000
-
+```
 
 
 
@@ -69,6 +62,7 @@ Endpoint: GET /quotes/random
 Description: Returns a single random quote.
 
 Example Response
+```json
 
 {
   "id": "123",
@@ -77,7 +71,7 @@ Example Response
   "category": "life",
   "likes": 15
 }
-
+```
 
 ---
 
@@ -88,7 +82,7 @@ Example:
 GET /quotes/category/motivation
 
 Response
-
+```json
 [
   {
     "id": "124",
@@ -98,7 +92,7 @@ Response
     "likes": 20
   }
 ]
-
+```
 
 ---
 
@@ -120,15 +114,15 @@ Headers:
 Authorization: Bearer <token>
 
 Request Body
-
+```json
 {
   "text": "Do what you can, with what you have, where you are.",
   "author": "Theodore Roosevelt",
   "category": "inspiration"
 }
-
+```
 Response
-
+```json
 {
   "message": "Quote added successfully!",
   "quote": {
@@ -139,7 +133,7 @@ Response
     "likes": 0
   }
 }
-
+```
 
 ---
 
@@ -149,11 +143,11 @@ Endpoint: PUT /quotes/:id
 Headers: Authorization: Bearer <token>
 
 Request Body
-
+```json
 {
   "text": "Updated quote text."
 }
-
+```
 
 ---
 
@@ -163,9 +157,9 @@ Endpoint: DELETE /quotes/:id
 Headers: Authorization: Bearer <token>
 
 Response
-
+```json
 { "message": "Quote deleted successfully!" }
-
+```
 
 ---
 
@@ -183,12 +177,12 @@ Endpoint: POST /quotes/:id/like
 Description: Increases the like count for a quote.
 
 Response
-
+```json
 {
   "message": "Quote liked!",
   "likes": 21
 }
-
+```
 
 ---
 
@@ -234,5 +228,3 @@ Contributions are welcome!
 ## 📄 License
 
 This project is licensed under the MIT License.
-
--
